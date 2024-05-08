@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commandes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="titre">
+    Titre : Commandes Linux
+  </div>
+    <div class="container">
+        <div class="selector">
+            <h2>Liste des commandes</h2>
+            <select id="commandSelector" onchange="showCommand()">
+                <option value="">Sélectionner une commande</option>
+                <option value="cd">cd</option>
+                <option value="ls">ls</option>
+                <option value="mkdir">mkdir</option>
+                <option value="pwd">pwd</option>
+                <option value="rm">rm</option>
+                <option value="touch">touch</option>
+            </select>
+        </div>
+        <div class="description" id="commandDescription">
+            <h2>Description</h2>
+            <p>Sélectionnez une commande pour voir sa description.</p>
+        </div>
+        <div class="examples" id="commandExamples">
+            <h2>Exemples et déclinaisons</h2>
+            <p>Sélectionnez une commande pour voir des exemples.</p>
+            <button onclick="copyCommand()">Copier</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

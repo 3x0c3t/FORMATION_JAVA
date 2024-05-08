@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guide Git</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Création d'un nouveau dépôt</h2>
+            <p>Utilisez ces commandes pour créer un nouveau dépôt Git :</p>
+            <pre>
+git init
+            </pre>
+        </section>
+        <section>
+            <h2>Ajout et commit des fichiers</h2>
+            <p>Utilisez ces commandes pour ajouter et valider vos modifications :</p>
+            <pre>
+git add nom_fichier
+git commit -m "Message de commit"
+            </pre>
+        </section>
+        <section>
+            <h2>Consultation de l'état du dépôt</h2>
+            <p>Utilisez ces commandes pour consulter l'état du dépôt :</p>
+            <pre>
+git status
+git log
+            </pre>
+        </section>
+        <section>
+            <h2>Branches</h2>
+            <p>Utilisez ces commandes pour créer et gérer des branches :</p>
+            <pre>
+git branch nom_branche
+git checkout nom_branche
+git merge nom_branche
+            </pre>
+        </section>
+        <section>
+            <h2>Mise à jour du dépôt distant</h2>
+            <p>Utilisez ces commandes pour travailler avec un dépôt distant :</p>
+            <pre>
+git remote add origin url_depot distant
+git push -u origin nom_branche
+git pull origin nom_branche
+            </pre>
+        </section>
+    </main>
+</body>
+</html>

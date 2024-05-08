@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Block -->
+    <div class="left-block">
+      <h2>Grid Settings</h2>
+      <div class="grid-settings">
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" min="1" value="2">
+        <br>
+        <label for="columns">Columns:</label>
+        <input type="number" id="columns" min="1" value="3">
+        <br>
+        <label for="gap">Grid Gap (px):</label>
+        <input type="number" id="gap" min="0" value="10">
+      </div>
+    </div>
+
+    <!-- Center Block -->
+    <div class="center-block">
+      <h2>Grid Display</h2>
+      <div class="grid-display" id="gridDisplay">
+        <!-- Grid will be displayed here -->
+      </div>
+    </div>
+
+    <!-- Right Block -->
+    <div class="right-block">
+      <h2>HTML & CSS Code</h2>
+      <div class="code-display" id="codeDisplay">
+        <!-- Code will be displayed here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

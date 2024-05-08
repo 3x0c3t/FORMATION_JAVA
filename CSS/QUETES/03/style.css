@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0 auto; 
+     line-height: 1.5;
+     background-color: grey;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     max-width: 800px;
+     position: 
+ }
+
+ h1 {
+    text-align: center;
+ }
+
+ main {
+     background-color: white;
+     color: black;
+     padding: 10px;
+     margin: 10px;
+     border: 1px solid black;
+     /* width: 200px;
+     height: 100px; */
+     text-align: left;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #aa01b0; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    border: 1px solid #007bff; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de type pointeur */
+}
+
+a.button:hover {
+    background-color: #000000; /* Changement de couleur au survol */
+}

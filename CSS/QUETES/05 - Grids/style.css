@@ -1,0 +1,52 @@
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  /* Style for the left block */
+  .left-block {
+    width: 300px;
+    background-color: lightgray;
+  }
+  
+  /* Style for the center block */
+  .center-block {
+    width: calc(100% - 500px);
+    background-color: lightblue;
+  }
+  
+  /* Style for the right block */
+  .right-block {
+    width: 300px;
+    background-color: lightgray;
+  }
+  
+  /* Style for the grid display */
+  .grid-display {
+    display: grid;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Style for the grid rows */
+  .grid-row {
+    display: flex;
+  }
+  
+  /* Style for the grid cells */
+  .grid-display div {
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* Style for the code display */
+  .code-display {
+    padding: 10px;
+    border: 1px solid black;
+    white-space: pre-wrap;
+  }
+  

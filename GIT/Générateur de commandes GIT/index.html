@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Command Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Git Command Generator</h1>
+        <div class="form-group">
+            <label for="action">Action:</label>
+            <select id="action">
+                <option value="add">Add</option>
+                <option value="commit">Commit</option>
+                <option value="push">Push</option>
+                <option value="pull">Pull</option>
+                <option value="checkout">Checkout</option>
+                <!-- Ajoutez d'autres actions ici -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="files">Fichiers:</label>
+            <input type="text" id="files" placeholder="Nom du fichier">
+        </div>
+        <div class="description" id="commandDescription">
+            <p>Description de la commande:</p>
+        </div>
+        <button onclick="generateCommand()">Générer Commande</button>
+        <button onclick="copyCommand()">Copier Commande</button>
+        <div class="generated-command" id="generatedCommand"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
