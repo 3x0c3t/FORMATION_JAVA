@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilise toute la hauteur de l'écran */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles pour le thème 1 */
+.HeaderTheme1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.BodyTheme1 {
+    flex: 1; /* Le corps prend autant d'espace vertical que possible */
+    padding: 20px;
+}
+
+.FooterTheme1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Le footer reste en bas de la page */
+}
+
+.Theme1 {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Styles pour le thème 2 */
+.HeaderTheme2 {
+    background-color: #880000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.BodyTheme2 {
+    flex: 1; /* Le corps prend autant d'espace vertical que possible */
+    padding: 20px;
+}
+
+.FooterTheme2 {
+    background-color: #880000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Le footer reste en bas de la page */
+}
+
+.Theme2 {
+    background-color: #ff8080;
+    color: #000;
+}
+
+/* Media queries pour la responsivité */
+@media only screen and (max-width: 768px) {
+    .HeaderTheme1, .HeaderTheme2 {
+        padding: 10px;
+    }
+    
+    .BodyTheme1, .BodyTheme2 {
+        padding: 10px;
+    }
+
+    .FooterTheme1, .FooterTheme2 {
+        padding: 10px;
+    }
+}
+
+/* Media queries pour les tailles de TV */
+@media only screen and (min-width: 1200px) {
+    .HeaderTheme1, .HeaderTheme2 {
+        padding: 40px;
+    }
+    
+    .BodyTheme1, .BodyTheme2 {
+        padding: 40px;
+    }
+
+    .FooterTheme1, .FooterTheme2 {
+        padding: 40px;
+    }
+}
