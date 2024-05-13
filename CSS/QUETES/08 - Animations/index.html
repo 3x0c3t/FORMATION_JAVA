@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocs en lignes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="block-container">
+                <div class="block animation1 animation-example slide-in">-3xØc3t-</div>
+                <div class="block">/* Animation pour le texte */
+                    @keyframes slideIn {
+                        from {
+                            transform: translateX(-100%);
+                        }
+                        to {
+                            transform: translateX(0);
+                        }
+                    }
+                    .animation1.slide-in {
+                        animation: slideIn 1s ease-out;
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block-container">
+                <div class="block animation2 animation-example bounce">-3xØc3t-</div>
+                <div class="block">/* Animation pour le texte */
+                    @keyframes bounce {
+                        from {
+                            transform: translateY(0);
+                        }
+                        to {
+                            transform: translateY(-20px);
+                        }
+                    }
+                    .animation2.bounce {
+                        animation: bounce 1s infinite alternate;
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block-container">
+                <div class="block animation3 animation-example rotate">-3xØc3t-</div>
+                <div class="block">/* Animation pour le texte */
+                    @keyframes rotate {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    .animation3.rotate {
+                        animation: rotate 1s infinite linear;
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block-container">
+                <div class="block animation4 animation-example fade-in">-3xØc3t-</div>
+                <div class="block">/* Animation pour le texte */
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                    .animation4.fade-in {
+                        animation: fadeIn 1s ease-in;
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block-container">
+                <div class="block animation5 animation-example custom-animation">-3xØc3t-</div>
+                <div class="block">/* Animation pour le texte */
+                    @keyframes customAnimation {
+                        0% {
+                            transform: rotate(0deg) scale(1) translateY(0);
+                            opacity: 1;
+                        }
+                        50% {
+                            transform: rotate(180deg) scale(1.5) translateY(-20px);
+                            opacity: 0.5;
+              
